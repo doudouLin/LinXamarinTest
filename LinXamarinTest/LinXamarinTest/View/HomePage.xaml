@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LinXamarinTest.View.HomePage"
+             Title="Home">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <!--<Image x:Name="testImg" Source="PandaKF.png"/>-->
+            <!--<Button Text="{Binding ClickCountFormated}" Command="{Binding IncrementCommand}" VerticalOptions="Center"/>-->
+            <!--<Label x:Name="label"/>-->
+            
+            <!--Clicked="Button_Clicked" -->
+            <Entry Placeholder="Please input search text" PlaceholderColor="Gray" x:Name="searchTxt" TextColor="Gray" Text="{Binding SearchTxt}"/>
+            
+            <ListView x:Name="ListItems" 
+                      ItemsSource="{Binding All}"
+                      ItemSelected="LstPanda_ItemSelected">
+                <!--<ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                            <TextCell Text="{Binding Title}" TextColor="Black" />
+                    </DataTemplate>   
+                        IsGroupingEnabled="True" 
+                        GroupDisplayBinding="{Binding Title}"
+                        GroupShortNameBinding="{Binding ShortName}"
+                        
+                </ListView.GroupHeaderTemplate>-->
+                
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="20,0,0,0" HorizontalOptions="StartAndExpand">
+                                <Image HorizontalOptions="Start" Source="panda1.png"></Image>
+                                <Label Text="{Binding name}" TextColor="Gray" WidthRequest="100" FontSize="12"></Label>
+                                <Label Text="{Binding capital}" TextColor="Gray" WidthRequest="100" FontSize="12"></Label>
+                                <Label Text="{Binding abbr}" TextColor="Gray" WidthRequest="100" FontSize="12"></Label>
+                                <!--<Label Text="{Binding LastName}" TextColor="Gray" HorizontalOptions="CenterAndExpand" FontSize="12"></Label>-->
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+
+<!--<Grid Padding="0,0,0,50">
+                <Entry x:Name="MainEntry" BackgroundColor="Gray" Placeholder="Type Here"/>
+            </Grid>
+            <Button Clicked="Button_Clicked" Text="Say Hello!" BackgroundColor="Green" TextColor="White"/>
+            <Label x:Name="MainLabel" TextColor="Gray"/>-->
+<!--<Button Clicked="NavButton_Clicked" Text="About App" BackgroundColor="Navy" VerticalOptions="End"/>-->
+    

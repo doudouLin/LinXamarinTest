@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LinXamarinTest.View.Detail"
+             Title="Detail">
+    <!--<ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="BackgroundColor" Value="Lime"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>-->
+    <ContentPage.Content>
+        <StackLayout Padding="15" BackgroundColor="White" VerticalOptions="StartAndExpand">
+            <Image Source="panda1.png" WidthRequest="100" HeightRequest="100"/>
+            <Label Text="Country: " FontSize="Large" TextColor="Black"/>
+            <Label Text="{Binding country}" FontSize="Large" TextColor="Gray"/>
+            <Label Text="{Binding name}" FontSize="Large" TextColor="Gray"/>
+            <Label Text="{Binding abbr}" FontSize="Large" TextColor="Gray"/>
+            <Label Text="{Binding area}" FontSize="Large" TextColor="Gray"/>
+            <Label Text="{Binding largest_city}" FontSize="Large" TextColor="Gray"/>
+            <Label Text="{Binding capital}" FontSize="Large" TextColor="Gray"/>
+            <Button Text="TestStyle" >
+            </Button>
+            <!--Style="{StaticResource ButtonStyle}"-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
