@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_number": "1047538898675",
+    "firebase_url": "https://xamarinfcm-9dc9b.firebaseio.com",
+    "project_id": "xamarinfcm-9dc9b",
+    "storage_bucket": "xamarinfcm-9dc9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047538898675:android:74ff3aad87576d50",
+        "android_client_info": {
+          "package_name": "LinXamarinTest.Droid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047538898675-io7p5msk78ivk3vk19hpifeu0nnvajf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeLbykLE1VYnuYZg3RLWvrbFNa_JMTesg"
+        },
+        {
+          "current_key": "AIzaSyAk6IqQlzNLMEY9urHHoejKZ1_0CUhejSA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
