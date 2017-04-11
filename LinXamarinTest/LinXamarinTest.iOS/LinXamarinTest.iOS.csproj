@@ -100,6 +100,7 @@
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
+    <Compile Include="Function\PhoneDialer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -117,6 +118,13 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\panda1.png" />
+    <BundleResource Include="Resources\panda3.png" />
+    <BundleResource Include="Resources\panda2.png" />
+    <BundleResource Include="Resources\panda5.png" />
+    <BundleResource Include="Resources\panda6.png" />
+    <BundleResource Include="Resources\PandaKF.png" />
+    <BundleResource Include="Resources\panda4.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="GalaSoft.MvvmLight, Version=5.3.0.19026, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
@@ -151,6 +159,9 @@
       <HintPath>..\..\packages\Xamarin.Forms.2.3.3.193\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Function\" />
   </ItemGroup>
   <Import Project="..\LinXamarinTest\LinXamarinTest.projitems" Label="Shared" Condition="Exists('..\LinXamarinTest\LinXamarinTest.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

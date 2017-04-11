@@ -24,7 +24,7 @@ namespace LinXamarinTest.View
         //    ListItems.ItemsSource = await App.TodoManager.GetTasksAsync();
         //}
 
-        private async void LstPanda_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async void LstPanda_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if(e.SelectedItem == null)
             {
@@ -36,5 +36,9 @@ namespace LinXamarinTest.View
             await Navigation.PushAsync(new Detail(cm));
         }
         
+		void Handle_Clicked(object sender, System.EventArgs e)
+		{
+			var btn = sender as Button;
+		}
     }
 }

@@ -24,26 +24,26 @@ namespace LinXamarinTest.Droid
 		{
 			base.OnCreate (bundle);
 
-            Log.Debug(TAG, "google app id: " + Resource.String.google_app_id);
+            //Log.Debug(TAG, "google app id: " + Resource.String.google_app_id);
 
-            if (Intent.Extras != null)
-            {
-                foreach (var key in Intent.Extras.KeySet())
-                {
-                    var value = Intent.Extras.GetString(key);
-                    Log.Debug(TAG, "Key: {0} Value: {1}", key, value);
-                }
-            }
+            //if (Intent.Extras != null)
+            //{
+            //    foreach (var key in Intent.Extras.KeySet())
+            //    {
+            //        var value = Intent.Extras.GetString(key);
+            //        Log.Debug(TAG, "Key: {0} Value: {1}", key, value);
+            //    }
+            //}
 
 
-            SetContentView(Resource.Layout.Main);
+            //SetContentView(Resource.Layout.Main);
 
-            msgText = FindViewById<TextView>(Resource.Id.msgText);
+            //msgText = FindViewById<TextView>(Resource.Id.msgText);
 
-            var logTokenButton = FindViewById<Button>(Resource.Id.logTokenButton);
-            logTokenButton.Click += delegate {
-                Log.Debug(TAG, "InstanceID token: " + FirebaseInstanceId.Instance.Token);
-            };
+            //var logTokenButton = FindViewById<Button>(Resource.Id.logTokenButton);
+            //logTokenButton.Click += delegate {
+            //    Log.Debug(TAG, "InstanceID token: " + FirebaseInstanceId.Instance.Token);
+            //};
 
             //IsPlayServicesAvailable();
 

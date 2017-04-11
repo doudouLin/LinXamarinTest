@@ -44,6 +44,7 @@ namespace LinXamarinTest.ViewModel
             ////}
 
             SimpleIoc.Default.Register<HomeViewModel>();
+			//SimpleIoc.Default.Register<AboutViewModel>();
         }
 
         public HomeViewModel Home
@@ -54,7 +55,15 @@ namespace LinXamarinTest.ViewModel
             }
         }
         
-        public static void Cleanup()
+		//public AboutViewModel About 
+		//{ 
+		//	get 
+		//	{
+		//		return ServiceLocator.Current.GetInstance<AboutViewModel>();
+		//	}
+		//}
+        
+		public static void Cleanup()
         {
             // TODO Clear the ViewModels
         }

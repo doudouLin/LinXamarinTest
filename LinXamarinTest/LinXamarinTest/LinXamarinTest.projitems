@@ -36,6 +36,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\CityCheckConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Triggers\HomeEntryClickTriggerAction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\DataInputConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Triggers\FadeTriggerAction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\AboutViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Function\IDialer.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
@@ -59,11 +65,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Style\" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Detail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Converters\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Triggers\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Function\" />
   </ItemGroup>
 </Project>

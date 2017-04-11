@@ -1,20 +1,26 @@
 ﻿using Xamarin.Forms;
+using LinXamarinTest.ViewModel;
+using System;
 
 namespace LinXamarinTest.View
 {
     public partial class About : ContentPage
 	{
-		public About ()
+		public async void OnCall(object sender, EventArgs e)
 		{
-			InitializeComponent ();
-            //AboutLabel.Text = param + " called me!";
+			if (await this.DisplayAlert("Dial a number", "Would you like to call Lin?", "Yes", "No"))
+			{
+				var dialer = DependencyService.Get<IDialer>();
+
+				if (dialer != null)
+					dialer.Dial("+41794350697");
+			}
 		}
 
-        private void Button_Clicked(object sender, System.EventArgs e)
-        {
-            var btn = (Button)sender;
-
-            btn.Text = "set text!";
-        }
+		public About ()
+		{
+			InitializeComponent();
+			//BindingContext = App.Locator.About;
+		}
     }
 }

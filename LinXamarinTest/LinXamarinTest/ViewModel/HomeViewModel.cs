@@ -27,7 +27,7 @@ namespace LinXamarinTest.ViewModel
     {
         //private RelayCommand _navCommand;
         //private readonly INavigationService _navService;
-        private string _searchTxt;
+        private string _searchTxt = "";
 
         public string SearchTxt {
             get
@@ -46,11 +46,13 @@ namespace LinXamarinTest.ViewModel
 
         public const string ClickCountPropertyName = "ClickCount";
 
+
         private async void GetAllCountries()
         {
             _all = await App.TodoManager.GetTasksAsync();
             RaisePropertyChanged(() => All);
         }
+
 
         private List<CountryModel> _all;
 
